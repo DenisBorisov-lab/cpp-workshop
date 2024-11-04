@@ -1,5 +1,6 @@
 #include "hex.h"
 
+
 Hex::Hex() : digits(nullptr), size(0) {}
 
 Hex::Hex(const size_t &n, unsigned char t) : size(n) {
@@ -51,11 +52,11 @@ Hex::Hex(Hex &&other) noexcept: digits(other.digits), size(other.size) {
 }
 
 Hex::~Hex() noexcept {
-    delete[] digits;
-}
-
-void Hex::validateHexDigit(unsigned char digit) const {
-    if (digit > 15) throw std::invalid_argument("Invalid hex digit");
+    if (size > 0) {
+        size = 0;
+        delete[] digits;
+        digits = nullptr;
+    }
 }
 
 size_t Hex::getSize() const {
@@ -85,18 +86,6 @@ Hex Hex::add(const Hex &other) const {
     return result;
 }
 
-Hex &Hex::operator=(const Hex &other) {
-    if (this != &other) {  // проверка на самоприсваивание
-        delete[] digits;    // освобождаем старую память
-        size = other.size;
-        digits = new unsigned char[size];
-        for (size_t i = 0; i < size; ++i) {
-            digits[i] = other.digits[i];
-        }
-    }
-    return *this;
-}
-
 Hex Hex::subtract(const Hex &other) const {
     if (isLessThan(other)) throw std::invalid_argument("Cannot subtract larger number");
 
@@ -116,18 +105,16 @@ Hex Hex::subtract(const Hex &other) const {
 
         result.digits[i] = diff;
     }
-
     return result;
 }
 
-void Hex::addAssign(const Hex &other) {
-    Hex result = add(other);
-    *this = result;
-}
+bool Hex::isEqual(const Hex &other) const {
+    if (size != other.size) return false;
 
-void Hex::subtractAssign(const Hex &other) {
-    Hex result = subtract(other);
-    *this = result;
+    for (size_t i = 0; i < size; ++i) {
+        if (digits[i] != other.digits[i]) return false;
+    }
+    return true;
 }
 
 bool Hex::isGreaterThan(const Hex &other) const {
@@ -145,19 +132,9 @@ bool Hex::isLessThan(const Hex &other) const {
     return !isGreaterThan(other) && !isEqual(other);
 }
 
-bool Hex::isEqual(const Hex &other) const {
-    if (size != other.size) return false;
-
-    for (size_t i = 0; i < size; ++i) {
-        if (digits[i] != other.digits[i]) return false;
-    }
-    return true;
-}
-
 std::string Hex::toString() const {
     if (size == 0) return "0";
 
-    // Находим первую значащую цифру (пропускаем ведущие нули)
     size_t firstNonZero = size;
     for (size_t i = size; i > 0; --i) {
         if (digits[i - 1] != 0) {
@@ -166,11 +143,9 @@ std::string Hex::toString() const {
         }
     }
 
-    // Если все цифры нули, возвращаем "0"
     if (firstNonZero == size) return "0";
 
     std::string result;
-    // Проходим от старшего разряда к младшему
     for (size_t i = firstNonZero + 1; i > 0; --i) {
         char digit = digits[i - 1];
         result += (digit < 10) ? ('0' + digit) : ('A' + digit - 10);

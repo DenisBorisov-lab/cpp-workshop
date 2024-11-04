@@ -43,14 +43,12 @@ TEST(HexConstructorTest, MoveConstructor) {
     EXPECT_EQ(original.getSize(), 0);
 }
 
-// Тесты на исключения в конструкторах
 TEST(HexConstructorTest, InvalidHexDigit) {
     EXPECT_THROW(Hex(1, 16), std::invalid_argument);
     EXPECT_THROW(Hex({1, 16, 3}), std::invalid_argument);
     EXPECT_THROW(Hex("GHI"), std::invalid_argument);
 }
 
-// Тесты арифметических операций
 TEST(HexArithmeticTest, Addition) {
     Hex a("A5");
     Hex b("3F");
@@ -85,22 +83,6 @@ TEST(HexArithmeticTest, SubtractionThrows) {
     EXPECT_THROW(a.subtract(b), std::invalid_argument);
 }
 
-// Тесты операций присваивания
-TEST(HexAssignmentTest, AddAssign) {
-    Hex a("A5");
-    Hex b("3F");
-    a.addAssign(b);
-    EXPECT_EQ(a.toString(), "E4");
-}
-
-TEST(HexAssignmentTest, SubtractAssign) {
-    Hex a("A5");
-    Hex b("3F");
-    a.subtractAssign(b);
-    EXPECT_EQ(a.toString(), "66");
-}
-
-// Тесты операций сравнения
 TEST(HexComparisonTest, GreaterThan) {
     Hex a("A5");
     Hex b("3F");
@@ -123,7 +105,6 @@ TEST(HexComparisonTest, Equal) {
     EXPECT_FALSE(a.isEqual(c));
 }
 
-// Тесты методов доступа
 TEST(HexAccessTest, GetDigit) {
     Hex h("ABC");
     EXPECT_EQ(h.getDigit(0), 0xC);
@@ -136,7 +117,6 @@ TEST(HexAccessTest, GetDigitThrows) {
     EXPECT_THROW(h.getDigit(3), std::out_of_range);
 }
 
-// Тесты граничных случаев
 TEST(HexEdgeCaseTest, EmptyString) {
     Hex h("");
     EXPECT_EQ(h.toString(), "0");
