@@ -4,6 +4,7 @@
 #include "triangle.h"
 #include "square.h"
 #include "rectangle.h"
+#include "trapezoid.h"
 
 void printDivider() {
     std::cout << "\n----------------------------------------\n";
@@ -20,6 +21,7 @@ int main() {
     array.add(new Triangle(0, 0, 6));
     array.add(new Square(2, 2, 4));
     array.add(new Rectangle(1, 1, 3, 5));
+    array.add(new Trapezoid(0, 0, 5, 2, 6));
 
     std::cout << "\n2. Вывод всех фигур:";
     printDivider();

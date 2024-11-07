@@ -7,6 +7,7 @@ add_executable(figure_tests
         tests/square_tests.cpp
         tests/rectangle_tests.cpp
         tests/figureArray_tests.cpp
+        tests/trapezoid_tests.cpp
 )
 
 target_link_libraries(figure_tests

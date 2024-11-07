@@ -4,6 +4,7 @@ add_library(figure_library STATIC
         square.cpp
         rectangle.cpp
         figureArray.cpp
+        trapezoid.cpp
 )
 
 target_include_directories(figure_library PUBLIC ${CMAKE_SOURCE_DIR}/include)

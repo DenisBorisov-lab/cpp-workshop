@@ -33,7 +33,7 @@ TEST_F(TriangleTest, Height) {
 
 TEST_F(TriangleTest, Area) {
     Triangle tr(0, 0, 2);
-    double expected_area = std::sqrt(3.0);  // side * height / 2
+    double expected_area = std::sqrt(3.0);
     EXPECT_NEAR(tr.getArea(), expected_area, EPSILON);
 }
 
