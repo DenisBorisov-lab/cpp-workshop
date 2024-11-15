@@ -3,7 +3,7 @@
 #include <vector>
 #include "figure.h"
 
-class Triangle : public Figure {
+class Triangle final : public Figure {
 private:
     double side;
 

@@ -1,0 +1,22 @@
+# ninja log v5
+6	169	7534009601297743	CMakeFiles/lab4.dir/main.cpp.obj.ddi	2b8aaab0dff07d73
+1	179	7534105732292073	build.ninja	513e49cfc874edde
+11	1570	7534079850672440	Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	14930e4606f1e430
+169	200	7534009601617787	CMakeFiles/lab4.dir/CXX.dd	dbfba97db7d66f
+1011	1103	7534075740611479	lab4.exe	f3cbb07c34d3cde2
+5	1497	7534084806009336	Google_tests/CMakeFiles/figure_tests.dir/tests/figure_tests.cpp.obj	fd07fc3757f03307
+169	200	7534009601617787	C:/Users/maibo/CLionProjects/cpp-workshop/lab-4/cmake-build-debug/CMakeFiles/lab4.dir/CXXModules.json	dbfba97db7d66f
+169	200	7534009601617787	CMakeFiles/lab4.dir/main.cpp.obj.modmap	dbfba97db7d66f
+4	1010	7534075739706258	CMakeFiles/lab4.dir/main.cpp.obj	f206b6085612a0fd
+8	7956	7534079914361709	Google_tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	c67e3d7332f0b256
+7957	8134	7534079916305761	lib/libgtest.a	3531db21ba3f5924
+8134	8173	7534079916710931	lib/libgtest_main.a	c878d5f6ec1d51ae
+1373	1692	7534104538337672	Google_tests/figure_tests.exe	39778aaa8fa8e92d
+6	1658	7534098376451152	Google_tests/CMakeFiles/figure_tests.dir/tests/trapezoid_tests.cpp.obj	9edb054b73602f74
+6	1729	7534102161195300	Google_tests/CMakeFiles/figure_tests.dir/tests/square_tests.cpp.obj	d5deb0b99bfe689
+5	1633	7534104028276505	Google_tests/CMakeFiles/figure_tests.dir/tests/rectangle_tests.cpp.obj	9c53dbb6909d475d
+6	1372	7534104535266085	Google_tests/CMakeFiles/figure_tests.dir/tests/point_tests.cpp.obj	e3f4d93d330ec61a
+6	1922	7534106055522645	Google_tests/CMakeFiles/figure_tests.dir/tests/array_tests.cpp.obj	9c8c731a44f53242
+1922	2282	7534106059014209	Google_tests/figure_tests.exe	880570e97508fa78
+6	1829	7534106830568556	Google_tests/CMakeFiles/figure_tests.dir/tests/array_tests.cpp.obj	9c8c731a44f53242
+1829	2183	7534106834005279	Google_tests/figure_tests.exe	880570e97508fa78

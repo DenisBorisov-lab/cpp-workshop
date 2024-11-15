@@ -3,7 +3,7 @@
 #include <vector>
 #include "figure.h"
 
-class Trapezoid : public Figure {
+class Trapezoid final : public Figure {
 private:
     double topSide;
     double bottomSide;

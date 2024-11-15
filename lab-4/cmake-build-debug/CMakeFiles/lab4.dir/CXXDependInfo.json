@@ -1,0 +1,21 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "C:/Users/maibo/CLionProjects/cpp-workshop/lab-4/cmake-build-debug",
+	"dir-cur-src" : "C:/Users/maibo/CLionProjects/cpp-workshop/lab-4",
+	"dir-top-bld" : "C:/Users/maibo/CLionProjects/cpp-workshop/lab-4/cmake-build-debug",
+	"dir-top-src" : "C:/Users/maibo/CLionProjects/cpp-workshop/lab-4",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\Users\\maibo\\CLionProjects\\cpp-workshop\\lab-4\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/maibo/CLionProjects/cpp-workshop/lab-4/cmake-build-debug/CMakeFiles/lab4.dir"
+}

@@ -2,7 +2,7 @@
 
 #include "figure.h"
 
-class Rectangle : public Figure {
+class Rectangle final : public Figure {
 private:
     double width;
     double height;

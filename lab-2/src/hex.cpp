@@ -33,7 +33,9 @@ Hex::Hex(const std::string &t) {
         } else if ((c >= 'a' && c <= 'f')) {
             digits[i] = c - 'a' + 10;
         } else {
+            size = 0;
             delete[] digits;
+            digits = nullptr;
             throw std::invalid_argument("Invalid hex string");
         }
     }

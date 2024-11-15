@@ -2,7 +2,7 @@
 
 #include "figure.h"
 
-class Square : public Figure {
+class Square final : public Figure {
 private:
     double side;
 
