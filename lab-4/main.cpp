@@ -12,7 +12,7 @@ void printDivider() {
 }
 
 int main() {
-    auto square = std::make_shared<Square<int>>(Point<int>(0, 0), 0);
+    auto square = std::make_shared<Square<int>>(Point<int>(0, 0), 1);
     std::cin >> *square;
     std::cout << *square << std::endl;
 

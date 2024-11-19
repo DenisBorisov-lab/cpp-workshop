@@ -20,3 +20,17 @@
 1922	2282	7534106059014209	Google_tests/figure_tests.exe	880570e97508fa78
 6	1829	7534106830568556	Google_tests/CMakeFiles/figure_tests.dir/tests/array_tests.cpp.obj	9c8c731a44f53242
 1829	2183	7534106834005279	Google_tests/figure_tests.exe	880570e97508fa78
+18	1617	7537437612648831	CMakeFiles/lab4.dir/main.cpp.obj	f206b6085612a0fd
+1618	1915	7537437615610117	lab4.exe	f3cbb07c34d3cde2
+5	950	7537438442266041	CMakeFiles/lab4.dir/main.cpp.obj	f206b6085612a0fd
+950	1039	7537438443136032	lab4.exe	f3cbb07c34d3cde2
+6	948	7537440159164154	CMakeFiles/lab4.dir/main.cpp.obj	f206b6085612a0fd
+948	1040	7537440160064139	lab4.exe	f3cbb07c34d3cde2
+11	2432	7537440710692332	Google_tests/CMakeFiles/figure_tests.dir/tests/trapezoid_tests.cpp.obj	9edb054b73602f74
+14	2444	7537440710812339	Google_tests/CMakeFiles/figure_tests.dir/tests/square_tests.cpp.obj	d5deb0b99bfe689
+17	2475	7537440711112340	Google_tests/CMakeFiles/figure_tests.dir/tests/rectangle_tests.cpp.obj	9c53dbb6909d475d
+20	2557	7537440711932333	Google_tests/CMakeFiles/figure_tests.dir/tests/array_tests.cpp.obj	9c8c731a44f53242
+6	1769	7537443922914996	Google_tests/CMakeFiles/figure_tests.dir/tests/figure_tests.cpp.obj	fd07fc3757f03307
+1769	2219	7537443927286637	Google_tests/figure_tests.exe	880570e97508fa78
+5	1045	7537444001868613	CMakeFiles/lab4.dir/main.cpp.obj	f206b6085612a0fd
+1046	1143	7537444002818612	lab4.exe	f3cbb07c34d3cde2

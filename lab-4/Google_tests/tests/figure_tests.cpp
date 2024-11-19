@@ -14,6 +14,30 @@ public:
         return std::make_unique<TestFigure<T>>(this->center);
     }
 
+    std::vector<std::unique_ptr<Point<T>>> getVertices() const override {
+        std::vector<std::unique_ptr<Point<T>>> vertices;
+
+        T offset = 5;
+
+        vertices.push_back(std::make_unique<Point<T>>(
+                this->center.getX() - offset,
+                this->center.getY() - offset));
+
+        vertices.push_back(std::make_unique<Point<T>>(
+                this->center.getX() + offset,
+                this->center.getY() - offset));
+
+        vertices.push_back(std::make_unique<Point<T>>(
+                this->center.getX() + offset,
+                this->center.getY() + offset));
+
+        vertices.push_back(std::make_unique<Point<T>>(
+                this->center.getX() - offset,
+                this->center.getY() + offset));
+
+        return vertices;
+    }
+
     void input(std::istream &) override {}
 };
 
@@ -22,6 +46,26 @@ protected:
     Point<int> testPoint{5, 10};
     TestFigure<int> figure{testPoint};
 };
+
+
+TEST_F(FigureTest, GetVertices) {
+    auto vertices = figure.getVertices();
+
+    EXPECT_EQ(vertices.size(), 4);
+
+
+    EXPECT_EQ(vertices[0]->getX(), 0);
+    EXPECT_EQ(vertices[0]->getY(), 5);
+
+    EXPECT_EQ(vertices[1]->getX(), 10);
+    EXPECT_EQ(vertices[1]->getY(), 5);
+
+    EXPECT_EQ(vertices[2]->getX(), 10);
+    EXPECT_EQ(vertices[2]->getY(), 15);
+
+    EXPECT_EQ(vertices[3]->getX(), 0);
+    EXPECT_EQ(vertices[3]->getY(), 15);
+}
 
 TEST_F(FigureTest, Constructor) {
     Point<int> center = figure.getCenter();

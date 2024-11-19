@@ -49,6 +49,8 @@ public:
 
     virtual void input(std::istream &is) = 0;
 
+    virtual std::vector<std::unique_ptr<Point<T>>> getVertices() const = 0;
+
     operator double() const {
         return area();
     }
