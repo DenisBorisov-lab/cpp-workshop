@@ -1,0 +1,12 @@
+# ninja log v5
+14	347	7524566431264716	src/CMakeFiles/lab2.dir/main.cpp.obj	127ee668f2267364
+334	739	7528460388722835	src/libhex_library.a	e044fcb22fb5ee5
+19	333	7528460384662640	src/CMakeFiles/hex_library.dir/hex.cpp.obj	a1c7e32804aec050
+347	425	7524566432024709	src/lab2.exe	f0c2a890c4764017
+8	303	7537444295655620	build.ninja	f56c8daa724212b6
+17	1395	7521176827229802	Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	acc09e17456afbb7
+20	1469	7524554771092694	Google_tests/CMakeFiles/hex_tests.dir/hexTest.cpp.obj	2167d3d1c21b8893
+14	7979	7521176892931843	Google_tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	f38cd98371463a24
+7981	10527	7521176918553560	lib/libgtest.a	336a445c2f042919
+10527	10573	7521176919018346	lib/libgtest_main.a	b2176c3dc70232f5
+739	3714	7528460418435800	Google_tests/hex_tests.exe	d1fb592dd53e0e06
