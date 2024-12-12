@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
-#include "../include/CustomMemoryResource.h"
-#include "../include/Stack.h"
+#include "CustomMemoryResource.h"
+#include "Stack.h"
 
 TEST(StackTest, BasicIntTest) {
     CustomMemoryResource customResource(500);

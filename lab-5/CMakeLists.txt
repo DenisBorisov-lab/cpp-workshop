@@ -20,7 +20,11 @@ FetchContent_MakeAvailable(googletest)
 include_directories(include)
 add_executable(${CUR_PR}_exe main.cpp)
 
+target_include_directories(${CUR_PR}_exe PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
 add_executable(${CUR_PR}_tests tests/test.cpp)
+target_include_directories(${CUR_PR}_tests PUBLIC ${CUR_PR}/include)
+
 target_link_libraries(${CUR_PR}_tests gtest_main)
 
 add_test(NAME ${CUR_PR}tests COMMAND ${CUR_PR}_tests)

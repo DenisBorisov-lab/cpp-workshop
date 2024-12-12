@@ -1,7 +1,7 @@
 #include <iostream>
 #include <memory_resource>
-#include "../include/CustomMemoryResource.h"
-#include "../include/Stack.h"
+#include "CustomMemoryResource.h"
+#include "Stack.h"
 
 struct ComplexType {
     int id;
